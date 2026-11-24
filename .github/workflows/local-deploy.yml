@@ -10,7 +10,7 @@ concurrency:
   cancel-in-progress: false
 jobs:
   release:
-    if: ${{ vars.ENABLE_LOCAL_RUNNER == 'true' && github.ref == 'refs/heads/main' }}
+    if: ${{ vars.ENABLE_LOCAL_RUNNER == 'true' && github.ref == 'refs/heads/main' && github.repository == 'rudans601/FoodiGuard' && github.actor == github.repository_owner }}
     runs-on: [self-hosted, foodiguard-local]
     timeout-minutes: 65
     steps:
@@ -23,14 +23,18 @@ jobs:
       - name: Build, test and deploy on the Mac
         shell: bash
         env:
-          REGISTERED_HOME: ${{ vars.FOODIGUARD_HOME }}
+          REGISTERED_HOME: ${{ secrets.FOODIGUARD_HOME }}
         run: |
           set -euo pipefail
           if [ "${ACT:-}" = true ]; then
             source_dir="$FOODIGUARD_HOME"
           else
             [[ "$GITHUB_REF" == refs/heads/main ]]
-            export FOODIGUARD_HOME="${REGISTERED_HOME:?Set the FOODIGUARD_HOME repository variable}"
+            [[ "$GITHUB_ACTOR" == "$GITHUB_REPOSITORY_OWNER" ]]
+            [[ "$GITHUB_TRIGGERING_ACTOR" == "$GITHUB_REPOSITORY_OWNER" ]]
+            export FOODIGUARD_HOME="${REGISTERED_HOME:?Set the FOODIGUARD_HOME repository secret}"
             source_dir="$GITHUB_WORKSPACE"
           fi
+          test -r "$FOODIGUARD_HOME/.foodiguard-local/ci-token"
+          curl --fail --silent --max-time 10 http://127.0.0.1:18182/login >/dev/null
           python3 "$source_dir/local/scripts/release.py" "$GITHUB_SHA" "$source_dir"

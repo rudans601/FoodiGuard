@@ -47,7 +47,7 @@ make status
 
 `make deploy`는 커밋을 로컬 전용 소스 저장소로 전달한다. 워크플로가 Jenkins의 해당 빌드를 기다린 뒤 Argo CD의 Git 리비전, 실제 웹·API 이미지 태그, 준비 상태 HTTP 응답까지 확인한다. Jenkins 콘솔에는 실패한 단계의 로그가 남는다. Helm만 확인하려면 `helm lint local/chart --set-string tag=validation`을 사용한다.
 
-공개 저장소에서는 원격 실행을 기본 비활성화했다. 관리자가 실행 범위를 검토한 뒤 저장소 변수 ENABLE_LOCAL_RUNNER=true를 명시해야 활성화된다. GitHub의 실제 push 이벤트를 사용하려면 이 워크플로가 원격 `main`에 있어야 한다. 저장소 전용 macOS self-hosted runner에 `foodiguard-local` 라벨을 지정하고 저장소 변수 `FOODIGUARD_HOME`을 이 폴더의 절대경로로 설정한다. 신뢰한 main 커밋으로만 Mac에서 배포한다. GitHub 연결 없이 현재 변경을 시험할 때는 위 `make deploy`를 사용한다.
+공개 저장소에서는 원격 실행을 기본 비활성화했다. 관리자가 실행 범위를 검토한 뒤 저장소 변수 ENABLE_LOCAL_RUNNER=true를 명시해야 활성화된다. GitHub의 실제 push 이벤트를 사용하려면 이 워크플로가 원격 `main`에 있어야 한다. 저장소 전용 macOS self-hosted runner에 `foodiguard-local` 라벨을 지정하고 저장소 Secret `FOODIGUARD_HOME`을 이 폴더의 절대경로로 설정한다. 신뢰한 main 커밋으로만 Mac에서 배포한다. GitHub 연결 없이 현재 변경을 시험할 때는 위 `make deploy`를 사용한다.
 
 ## 중지 · 재시작과 데이터
 
@@ -78,3 +78,11 @@ make status
 이 공개본은 보안 정리 후 새 Git 이력으로 구성했다. 이전 운영 이력과 동의 화면 캡처, 실제 DB 덤프, 로컬 키는 이 Mac의 .foodiguard-local/에 보관한다. 공개본의 프로젝트 ID, 운영 주소, 이메일은 예시값이다. 연구 설명문은 공개 개발용 예시이며 실제 연구 시 승인 문서와 연락처를 설정해야 한다.
 
 공개 파일 점검은 gitleaks git . --redact로 실행한다. .foodiguard-local/ 전체를 업로드하거나 Docker 이미지에 포함하지 않는다.
+
+## GitHub 자동 배포
+
+main에 저장소 소유자가 push하거나 수동 실행하면 전용 Mac runner가 Jenkins의 테스트·이미지 빌드를 시작한다. Argo CD가 통과한 리비전을 배포하고 Actions가 이미지 태그와 준비 상태까지 확인한다. 소유자의 재실행만 허용한다. 외부 PR에서는 이 배포 워크플로가 실행되지 않는다.
+
+Mac에 로그인한 상태에서 Docker Desktop과 푸디가드 서비스를 켜야 한다. make start로 서비스를 시작한다. runner는 로그인 시 시작하는 LaunchAgent이며 .foodiguard-local/actions-runner/svc.sh의 start, stop, status로 관리한다. runner를 중지하거나 Mac이 잠들면 배포 작업은 대기할 수 있다.
+
+저장소 설정은 ENABLE_LOCAL_RUNNER=true 변수와 FOODIGUARD_HOME Secret을 사용한다. Secret에는 이 Mac의 Project 절대경로를 설정한다. runner 자격 증명과 앱 비밀번호는 .foodiguard-local 안에 보관한다.

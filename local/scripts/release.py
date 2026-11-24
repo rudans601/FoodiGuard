@@ -66,7 +66,7 @@ if status != "SUCCESS":
 release = run("git", "--git-dir", str(state / "gitops.git"), "rev-parse", "main")
 if revision not in run("git", "--git-dir", str(state / "gitops.git"), "show", "main:chart/release.yaml"):
     sys.exit("A newer release has already been promoted")
-k("-n", "argocd", "apply", "-f", str(home / "local/platform/application.yaml"))
+k("-n", "argocd", "apply", "-f", str(source / "local/platform/application.yaml"))
 k("-n", "argocd", "annotate", "application/foodiguard", "argocd.argoproj.io/refresh=hard", "--overwrite")
 
 def synced():

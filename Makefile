@@ -25,7 +25,7 @@ up: platform
 
 deploy:
 	@test -z "$$(git status --porcelain --untracked-files=normal)" || { echo '배포할 파일을 먼저 로컬 Git에 커밋하세요.'; exit 1; }
-	act workflow_dispatch --var ENABLE_LOCAL_RUNNER=true -W .github/workflows/local-deploy.yml -P self-hosted=-self-hosted -P foodiguard-local=-self-hosted --env "FOODIGUARD_HOME=$(CURDIR)" --var "FOODIGUARD_HOME=$(CURDIR)"
+	act workflow_dispatch --actor rudans601 --var ENABLE_LOCAL_RUNNER=true -W .github/workflows/local-deploy.yml -P self-hosted=-self-hosted -P foodiguard-local=-self-hosted --env "FOODIGUARD_HOME=$(CURDIR)" --var "FOODIGUARD_HOME=$(CURDIR)"
 
 monitoring:
 	$(K) -n foodiguard create configmap foodiguard-monitoring --from-file=local/platform/prometheus.yml --from-file=local/platform/alerts.yml --dry-run=client -o yaml | $(K) -n foodiguard apply -f -
