@@ -83,6 +83,6 @@ make status
 
 main에 저장소 소유자가 push하거나 수동 실행하면 전용 Mac runner가 Jenkins의 테스트·이미지 빌드를 시작한다. Argo CD가 통과한 리비전을 배포하고 Actions가 이미지 태그와 준비 상태까지 확인한다. 소유자의 재실행만 허용한다. 외부 PR에서는 이 배포 워크플로가 실행되지 않는다.
 
-Mac에 로그인한 상태에서 Docker Desktop과 푸디가드 서비스를 켜야 한다. make start로 서비스를 시작한다. runner는 로그인 시 시작하는 LaunchAgent이며 .foodiguard-local/actions-runner/svc.sh의 start, stop, status로 관리한다. runner를 중지하거나 Mac이 잠들면 배포 작업은 대기할 수 있다.
+Mac에 로그인한 상태에서 Docker Desktop과 푸디가드 서비스를 켜야 한다. make start로 서비스를 시작한다. 이 Mac에서는 Desktop 폴더 접근 권한 때문에 runner를 로그인 세션의 독립 프로세스로 실행한다. 재부팅 후에는 Project 폴더에서 make runner를 실행하고 해당 터미널을 유지한다. 자동 로그인 서비스 등록에는 macOS의 Desktop 접근 권한 설정이 추가로 필요하다. runner를 중지하거나 Mac이 잠들면 배포 작업은 대기할 수 있다.
 
 저장소 설정은 ENABLE_LOCAL_RUNNER=true 변수와 FOODIGUARD_HOME Secret을 사용한다. Secret에는 이 Mac의 Project 절대경로를 설정한다. runner 자격 증명과 앱 비밀번호는 .foodiguard-local 안에 보관한다.

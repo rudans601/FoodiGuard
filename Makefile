@@ -53,3 +53,7 @@ start:
 	$(K) -n foodiguard rollout status deploy/foodiguard-api --timeout=5m
 	$(K) -n foodiguard rollout status deploy/foodiguard-web --timeout=5m
 	curl --retry 24 --retry-all-errors --retry-delay 2 --max-time 5 -fsS http://127.0.0.1:18180/api/health/ready
+
+.PHONY: runner
+runner:
+	cd .foodiguard-local/actions-runner && ./run.sh
