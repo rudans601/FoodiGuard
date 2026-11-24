@@ -1,0 +1,3 @@
+name: foodiguard-local
+include:
+  - local/compose.yaml

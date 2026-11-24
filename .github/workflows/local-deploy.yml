@@ -1,0 +1,36 @@
+name: FoodiGuard local release
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: foodiguard-local-release
+  cancel-in-progress: false
+jobs:
+  release:
+    if: ${{ vars.ENABLE_LOCAL_RUNNER == 'true' && github.ref == 'refs/heads/main' }}
+    runs-on: [self-hosted, foodiguard-local]
+    timeout-minutes: 65
+    steps:
+      - name: Check out the triggering commit
+        if: ${{ !env.ACT }}
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - name: Build, test and deploy on the Mac
+        shell: bash
+        env:
+          REGISTERED_HOME: ${{ vars.FOODIGUARD_HOME }}
+        run: |
+          set -euo pipefail
+          if [ "${ACT:-}" = true ]; then
+            source_dir="$FOODIGUARD_HOME"
+          else
+            [[ "$GITHUB_REF" == refs/heads/main ]]
+            export FOODIGUARD_HOME="${REGISTERED_HOME:?Set the FOODIGUARD_HOME repository variable}"
+            source_dir="$GITHUB_WORKSPACE"
+          fi
+          python3 "$source_dir/local/scripts/release.py" "$GITHUB_SHA" "$source_dir"

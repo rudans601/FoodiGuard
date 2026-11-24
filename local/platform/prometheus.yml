@@ -1,0 +1,10 @@
+global: {scrape_interval: 30s, evaluation_interval: 30s}
+rule_files: [/etc/foodiguard/alerts.yml]
+scrape_configs:
+- job_name: foodiguard-api
+  dns_sd_configs:
+  - names: [api-metrics.foodiguard.svc.cluster.local]
+    type: A
+    port: 8080
+- job_name: pod-metrics
+  static_configs: [{targets: ["pod-metrics:8080"]}]

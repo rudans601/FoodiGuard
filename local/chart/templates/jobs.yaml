@@ -1,0 +1,45 @@
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: foodiguard-migrate
+  annotations:
+    argocd.argoproj.io/hook: PreSync
+    argocd.argoproj.io/hook-delete-policy: BeforeHookCreation,HookSucceeded
+spec:
+  backoffLimit: 1
+  activeDeadlineSeconds: 1200
+  template:
+    spec:
+      automountServiceAccountToken: false
+      restartPolicy: Never
+      containers:
+      - name: migrate
+        image: {{ include "foodiguard.apiImage" . }}
+        command: [npm, run, "db:migrate"]
+        env:
+{{ include "foodiguard.dbEnv" . | indent 8 }}
+        - {name: DB_STATEMENT_TIMEOUT_MS, value: "900000"}
+---
+apiVersion: batch/v1
+kind: CronJob
+metadata: {name: foodiguard-allergen-projection}
+spec:
+  schedule: "0 3 * * *"
+  timeZone: Asia/Seoul
+  concurrencyPolicy: Forbid
+  jobTemplate:
+    spec:
+      backoffLimit: 1
+      activeDeadlineSeconds: 1800
+      template:
+        spec:
+          automountServiceAccountToken: false
+          restartPolicy: Never
+          containers:
+          - name: recalculate
+            image: {{ include "foodiguard.apiImage" . }}
+            command: [npm, run, "db:recalc-allergens", "--", "--apply", "--incremental"]
+            env:
+{{ include "foodiguard.dbEnv" . | indent 12 }}
+            - {name: SYNC_TRIGGER, value: cronjob}
+            - {name: DB_STATEMENT_TIMEOUT_MS, value: "900000"}

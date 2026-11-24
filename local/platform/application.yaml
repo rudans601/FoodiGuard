@@ -1,0 +1,28 @@
+apiVersion: argoproj.io/v1alpha1
+kind: AppProject
+metadata: {name: foodiguard, namespace: argocd}
+spec:
+  sourceRepos: [git://local-git.argocd.svc.cluster.local/gitops.git]
+  destinations: [{server: 'https://kubernetes.default.svc', namespace: foodiguard}]
+  namespaceResourceWhitelist:
+  - {group: '', kind: Service}
+  - {group: apps, kind: Deployment}
+  - {group: batch, kind: Job}
+  - {group: batch, kind: CronJob}
+  - {group: autoscaling, kind: HorizontalPodAutoscaler}
+  - {group: policy, kind: PodDisruptionBudget}
+---
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata: {name: foodiguard, namespace: argocd}
+spec:
+  project: foodiguard
+  source:
+    repoURL: git://local-git.argocd.svc.cluster.local/gitops.git
+    targetRevision: main
+    path: chart
+    helm: {valueFiles: [release.yaml]}
+  destination: {server: 'https://kubernetes.default.svc', namespace: foodiguard}
+  syncPolicy:
+    automated: {prune: true, selfHeal: true}
+    retry: {limit: 4}

@@ -1,0 +1,269 @@
+[
+  {
+    "id": "93472",
+    "name": "잠백이 점보 닭가슴살 볶음밥 간장계란",
+    "report_no": "19920355173474",
+    "source_url": "https://jambaekee.co.kr/product/detail.html?product_no=182",
+    "image_sha256": "a2dfb6b380dbcc3fadb422e0e0d4f75aef0c52e6e00cd2867fa4016c76929cef",
+    "accepted_contains": [
+      "알류",
+      "우유",
+      "대두",
+      "밀",
+      "닭고기",
+      "쇠고기",
+      "조개류(굴)"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "게",
+      "새우",
+      "돼지고기",
+      "복숭아",
+      "토마토",
+      "아황산류",
+      "호두",
+      "오징어",
+      "조개류(전복, 홍합)",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "13464",
+    "name": "허닭 볶음밥 도시락 닭가슴살 불닭볶음밥 & 한입 닭가슴살 깻잎맛",
+    "report_no": "2021035042513",
+    "source_url": "https://heodak.com/product/detail.html?product_no=165811",
+    "image_sha256": "6f80d336566bcfbff7273c1baa289b4786d46618e4cd3bed1ac8898c96b882ac",
+    "accepted_contains": [
+      "달걀",
+      "우유",
+      "대두",
+      "밀",
+      "닭고기",
+      "쇠고기",
+      "조개류(굴)"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "게",
+      "새우",
+      "돼지고기",
+      "복숭아",
+      "토마토",
+      "아황산류",
+      "호두",
+      "오징어",
+      "조개류(전복, 홍합)",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "207345",
+    "name": "무파마탕면",
+    "report_no": "200105495412",
+    "source_url": "https://nongshimmall.com/product/detail.html?product_no=2649",
+    "image_sha256": "c696df3576039c1c9a951de4ddf43a3c24a5b6254d47d4dd214f65a04508fe75",
+    "accepted_contains": [
+      "밀",
+      "대두",
+      "계란",
+      "우유",
+      "돼지고기",
+      "쇠고기"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "게",
+      "토마토",
+      "새우",
+      "호두",
+      "닭고기",
+      "오징어",
+      "조개류(굴, 전복, 홍합)",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "16778",
+    "name": "해물안성탕면",
+    "report_no": "19860360007364",
+    "source_url": "https://nongshimmall.com/product/detail.html?product_no=2666",
+    "image_sha256": "c86ea07c62ed9b86b0889a428aa335ce4ae45ae22a4c7978cf8d1c49da059948",
+    "accepted_contains": [
+      "밀",
+      "대두",
+      "계란",
+      "우유",
+      "게",
+      "새우",
+      "돼지고기",
+      "쇠고기",
+      "조개류(홍합)"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "토마토",
+      "호두",
+      "닭고기",
+      "오징어",
+      "조개류(굴, 전복)",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "51760",
+    "name": "큰컵 치즈불닭볶음면",
+    "report_no": "198803831271318",
+    "source_url": "https://www.samyangfoods.com/kor/brand/view.do?seq=68",
+    "image_sha256": "1a1513b3e2f47b9b4bb47e6dbce0db92132a7c83716dc94a2f857306faa52a58",
+    "accepted_contains": [
+      "우유",
+      "계란",
+      "대두",
+      "밀",
+      "닭고기",
+      "쇠고기"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "게",
+      "새우",
+      "돼지고기",
+      "토마토",
+      "호두",
+      "오징어",
+      "조개류",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "51749",
+    "name": "큰컵4가지치즈불닭볶음면",
+    "report_no": "198803831272056",
+    "source_url": "https://www.samyangfoods.com/kor/brand/view.do?seq=521",
+    "image_sha256": "d339ebcfbcfc112a45ce7375d660b693d787d7494f3dd4142a1fdd3573d7b450",
+    "accepted_contains": [
+      "계란",
+      "우유",
+      "대두",
+      "밀",
+      "닭고기",
+      "쇠고기"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "게",
+      "새우",
+      "돼지고기",
+      "토마토",
+      "호두",
+      "오징어",
+      "조개류",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "51753",
+    "name": "큰컵 푸팟퐁커리 불닭볶음면",
+    "report_no": "198803831272857",
+    "source_url": "https://www.samyangfoods.com/kor/brand/view.do?seq=675",
+    "image_sha256": "f031e839c2afbf8af6f67e4b34982aee5e95694fa807ac6563a09fd308b301d9",
+    "accepted_contains": [
+      "계란",
+      "우유",
+      "대두",
+      "밀",
+      "새우",
+      "닭고기",
+      "쇠고기",
+      "조개류(굴)"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "땅콩",
+      "고등어",
+      "게",
+      "돼지고기",
+      "토마토",
+      "호두",
+      "오징어",
+      "잣"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "77570",
+    "name": "참깨라면Cup",
+    "report_no": "19860309018509",
+    "source_url": "https://www.otokimall.com/front/product/574",
+    "image_sha256": "68064d84dcc5709766686e5e23eeb09379f166e43e0179f3113ede2ef61e6d38",
+    "accepted_contains": [
+      "밀",
+      "대두",
+      "계란",
+      "우유",
+      "쇠고기",
+      "돼지고기",
+      "닭고기",
+      "토마토",
+      "오징어",
+      "조개류(굴, 홍합)"
+    ],
+    "accepted_precaution": [
+      "메밀",
+      "새우",
+      "게",
+      "고등어",
+      "땅콩"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  },
+  {
+    "id": "237727",
+    "name": "떡만두국",
+    "report_no": "20170362092292",
+    "source_url": "https://damonfoods.co.kr/product.html?id=43",
+    "image_sha256": "17b1d73b5e53bf88bcd495ccfa6a28bf8ed29681edbe1684865845bc28b7101f",
+    "accepted_contains": [
+      "대두",
+      "돼지고기",
+      "밀",
+      "소고기",
+      "새우",
+      "알류(계란)",
+      "우유"
+    ],
+    "accepted_precaution": [
+      "고등어",
+      "게",
+      "닭고기",
+      "땅콩",
+      "메밀",
+      "아황산류",
+      "오징어",
+      "이산화황",
+      "조개류",
+      "토마토",
+      "호두"
+    ],
+    "historical_formula_equivalence": "미확인: 공개 시점 라벨과 과거 DB 등록 당시 배합의 동일성은 별도 확인 필요"
+  }
+]

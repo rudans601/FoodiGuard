@@ -1,0 +1,3 @@
+registry: foodiguard-registry:5000
+# The pipeline supplies the tested commit SHA in release.yaml.
+tag: ""

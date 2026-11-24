@@ -1,0 +1,1004 @@
+[
+  {
+    "label": "난류",
+    "input": "계란",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "난백액",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "난황액",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "전란액",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "메추리알",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "오리알",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "거위알",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "칠면조알",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "난류",
+    "input": "알룰로오스",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "난류",
+    "input": "명태알",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "난류",
+    "input": "알긴산나트륨",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "우유",
+    "input": "우유",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "우유",
+    "input": "탈지분유",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "우유",
+    "input": "유청단백",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "우유",
+    "input": "카제인나트륨",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "우유",
+    "input": "무유당우유",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "우유",
+    "input": "락토프리우유",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "우유",
+    "input": "땅콩버터",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "우유",
+    "input": "코코아버터",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "우유",
+    "input": "프락토올리고당",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "우유",
+    "input": "코코넛밀크",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "메밀",
+    "input": "메밀",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "메밀",
+    "input": "모밀",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "메밀",
+    "input": "메밀가루",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "메밀",
+    "input": "타타리메밀",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "메밀",
+    "input": "밀가루",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "메밀",
+    "input": "보리가루",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "땅콩",
+    "input": "땅콩",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "땅콩",
+    "input": "낙화생",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "땅콩",
+    "input": "피넛",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "땅콩",
+    "input": "땅콩버터",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "땅콩",
+    "input": "호두",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "땅콩",
+    "input": "아몬드",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "땅콩",
+    "input": "코코아버터",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "대두",
+    "input": "대두",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "탈지대두",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "분리대두단백",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "대두레시틴",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "콩기름(대두유)",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "백태",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "서리태",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "검정콩",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "청태",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "노란콩",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "흑두",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "대두",
+    "input": "완두단백",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "대두",
+    "input": "녹두전분",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "대두",
+    "input": "완두콩단백",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "밀",
+    "input": "밀가루",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "소맥분",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "박력분",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "중력분",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "강력분",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "세몰리나",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "듀럼밀",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "밀",
+    "input": "메밀가루",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "밀",
+    "input": "밀크초콜릿",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "밀",
+    "input": "호밀분말",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "밀",
+    "input": "옥수수글루텐",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "밀",
+    "input": "아밀라아제",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "밀",
+    "input": "보리글루텐",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "호두",
+    "input": "호두",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "호두",
+    "input": "호두분태",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "호두",
+    "input": "호두가루",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "호두",
+    "input": "피칸",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "호두",
+    "input": "아몬드",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "호두",
+    "input": "캐슈너트",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "잣",
+    "input": "잣",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "잣",
+    "input": "잣가루",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "잣",
+    "input": "잣분말",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "잣",
+    "input": "참깨",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "잣",
+    "input": "호두",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "잣",
+    "input": "해바라기씨",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "고등어",
+    "input": "고등어",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "고등어",
+    "input": "고등어살",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "고등어",
+    "input": "고등어분말",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "고등어",
+    "input": "삼치",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "고등어",
+    "input": "전갱이",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "고등어",
+    "input": "참치",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "게",
+    "input": "게",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "게",
+    "input": "꽃게",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "게",
+    "input": "대게살",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "게",
+    "input": "홍게",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "게",
+    "input": "스파게티",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "게",
+    "input": "성게",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "게",
+    "input": "멍게",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "게",
+    "input": "말토게닉아밀라아제",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "새우",
+    "input": "새우",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "새우",
+    "input": "새우젓",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "새우",
+    "input": "흰다리새우",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "새우",
+    "input": "대하",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "새우",
+    "input": "멸치",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "새우",
+    "input": "꽃게",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "오징어",
+    "input": "오징어",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "오징어",
+    "input": "갑오징어",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "오징어",
+    "input": "대왕오징어",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "오징어",
+    "input": "오징어먹물",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "오징어",
+    "input": "문어",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "오징어",
+    "input": "낙지",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "오징어",
+    "input": "주꾸미",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "조개류",
+    "input": "굴",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "전복",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "홍합",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "바지락",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "가리비",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "꼬막",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "모시조개",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "조개류",
+    "input": "굴비",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "조개류",
+    "input": "둥굴레",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "조개류",
+    "input": "덩굴월귤",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "조개류",
+    "input": "성게",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "조개류",
+    "input": "멍게",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "돼지고기",
+    "input": "돼지고기",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "돈육",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "라드",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "식용돈지",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "원료돈지",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "돈골엑기스베이스",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "돈피콜라겐",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "돼지고기",
+    "input": "돼지감자",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "돼지고기",
+    "input": "돼지감자분말",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "돼지고기",
+    "input": "쇠고기",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "닭고기",
+    "input": "닭고기",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "닭고기",
+    "input": "계육",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "닭고기",
+    "input": "닭발",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "닭고기",
+    "input": "닭가슴살",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "닭고기",
+    "input": "오리고기",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "닭고기",
+    "input": "칠면조고기",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "쇠고기",
+    "input": "쇠고기",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "소고기",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "우육",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "우골",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "한우",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "소뼈",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "소뼈추출액",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "쇠고기",
+    "input": "염소고기",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "쇠고기",
+    "input": "돼지사골",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "쇠고기",
+    "input": "닭사골",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "복숭아",
+    "input": "복숭아",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "복숭아",
+    "input": "복숭아과즙",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "복숭아",
+    "input": "천도복숭아",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "복숭아",
+    "input": "황도",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "복숭아",
+    "input": "백도",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "복숭아",
+    "input": "살구",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "복숭아",
+    "input": "자두",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "복숭아",
+    "input": "사과",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "토마토",
+    "input": "토마토",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "토마토",
+    "input": "토마토페이스트",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "토마토",
+    "input": "토마토케첩",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "토마토",
+    "input": "방울토마토",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "토마토",
+    "input": "감자",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "토마토",
+    "input": "고추",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "아황산류",
+    "input": "아황산나트륨",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "아황산류",
+    "input": "산성아황산나트륨",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "아황산류",
+    "input": "메타중아황산칼륨",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "아황산류",
+    "input": "이산화황",
+    "expected_flag": true,
+    "kind": "ingredient_positive"
+  },
+  {
+    "label": "아황산류",
+    "input": "황산나트륨",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "아황산류",
+    "input": "차아염소산나트륨",
+    "expected_flag": false,
+    "kind": "ingredient_non_evidence"
+  },
+  {
+    "label": "우유",
+    "input": "소스(탈지분유, 대두유)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "우유",
+    "input": "소스(우유, 식물성유지)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "밀",
+    "input": "소스(메밀가루, 밀가루)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "땅콩",
+    "input": "토피넛향(땅콩)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "대두",
+    "input": "소스(땅콩버터, 탈지대두)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "게",
+    "input": "스파게티(꽃게살)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "조개류",
+    "input": "소스(둥굴레, 굴)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "닭고기",
+    "input": "불닭소스(닭고기)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  },
+  {
+    "label": "쇠고기",
+    "input": "소스(소고기, 닭고기)",
+    "expected_flag": true,
+    "kind": "compound_ingredient"
+  }
+]

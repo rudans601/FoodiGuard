@@ -1,0 +1,35 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: {name: local-git}
+spec:
+  replicas: 1
+  selector: {matchLabels: {app: local-git}}
+  template:
+    metadata: {labels: {app: local-git}}
+    spec:
+      automountServiceAccountToken: false
+      containers:
+      - name: git-reader
+        image: quay.io/argoproj/argocd:v3.6.2
+        command: [git]
+        args: [-c, safe.directory=/repos/gitops.git, daemon, --reuseaddr, --export-all, --base-path=/repos, --listen=0.0.0.0, --port=9418, /repos/gitops.git]
+        readinessProbe: {tcpSocket: {port: 9418}, periodSeconds: 5}
+        volumeMounts: [{name: gitops, mountPath: /repos/gitops.git, readOnly: true}]
+      volumes:
+      - name: gitops
+        hostPath: {path: /var/local/foodiguard/gitops.git, type: Directory}
+---
+apiVersion: v1
+kind: Service
+metadata: {name: local-git}
+spec:
+  selector: {app: local-git}
+  ports: [{name: git, port: 9418}]
+---
+apiVersion: v1
+kind: Service
+metadata: {name: argocd-local-ui}
+spec:
+  type: NodePort
+  selector: {app.kubernetes.io/name: argocd-server}
+  ports: [{name: https, port: 443, targetPort: 8080, nodePort: 30443}]
